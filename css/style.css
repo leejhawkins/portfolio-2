@@ -16,7 +16,7 @@ p {
 #text {
   float:left;
 }
-#index-banner {
+#index-banner, #portfolio-header {
   text-shadow: black 2px 2px;
 }
 .info {

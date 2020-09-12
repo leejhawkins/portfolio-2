@@ -25,9 +25,9 @@
                     if (hash !== 'all') {
                         var $galleryFilteredOut = $galleryItems.not('.' + hash).not('.all');
                         $galleryFilteredOut.removeClass('gallery-filter').hide();
-                        $("#portfolio-header").text( text + " Portfolio ")
+                        $("#portfolio-header").text( text + " Projects ")
                     } else {
-                        $("#portfolio-header").text(" Portfolio ")
+                        $("#portfolio-header").text("All Projects ")
                     }
                     
 
