@@ -29,6 +29,7 @@
                     } else {
                         $("#portfolio-header").text(" Portfolio ")
                     }
+                    
 
                     // transition layout
                     $masonry.masonry({
