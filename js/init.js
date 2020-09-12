@@ -3,10 +3,9 @@
 
         $('.sidenav').sidenav();
         $('.parallax').parallax();
-        // $('.gallery-expand').galleryExpand('open');
-
-        // // Close
-        // $('.gallery-expand').galleryExpand('close');
+        var nav2 = $('#nav2')
+        nav2.pushpin({ top: nav2.offset().top });
+        
         var categories = $('div .categories-container');
         if (categories.length) {
             var $links = categories.find('li');
@@ -27,7 +26,7 @@
                         $galleryFilteredOut.removeClass('gallery-filter').hide();
                         $("#portfolio-header").text( text + " Projects ")
                     } else {
-                        $("#portfolio-header").text("All Projects ")
+                        $("#portfolio-header").text("Projects ")
                     }
                     
 
