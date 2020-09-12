@@ -32,7 +32,7 @@
 
                     // transition layout
                     $masonry.masonry({
-                        transitionDuration: '.3s'
+                        transitionDuration: '1s'
                     });
                     // only animate on layout
                     $masonry.one('layoutComplete', function (event, items) {
