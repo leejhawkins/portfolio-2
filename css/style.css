@@ -16,6 +16,9 @@ p {
 #text {
   float:left;
 }
+#index-banner {
+  font: outline;
+}
 
 
 .card-image {
