@@ -9,7 +9,6 @@
         // $('.gallery-expand').galleryExpand('close');
         var categories = $('div .categories-container');
         if (categories.length) {
-            categories.pushpin({ top: categories.offset().top });
             var $links = categories.find('li');
             $links.each(function () {
                 var $link = $(this);
@@ -17,13 +16,18 @@
                     $links.removeClass('active');
                     $link.addClass('active');
                     var hash = $link.find('a').first()[0].hash.substr(1);
+                    var text =$link.find('a').text()
                     var $galleryItems = $('.gallery .gallery-item');
+
 
                     $galleryItems.stop().addClass('gallery-filter').fadeIn(100);
 
                     if (hash !== 'all') {
                         var $galleryFilteredOut = $galleryItems.not('.' + hash).not('.all');
                         $galleryFilteredOut.removeClass('gallery-filter').hide();
+                        $("#portfolio-header").text( text + " Portfolio ")
+                    } else {
+                        $("#portfolio-header").text(" Portfolio ")
                     }
 
                     // transition layout
